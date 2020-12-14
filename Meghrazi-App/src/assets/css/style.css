@@ -5614,14 +5614,14 @@ a:hover {
    	-webkit-border-radius: 50px; 
   -moz-border-radius: 50px; 
    border-radius: 50px; 
-    moz-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 .btn_hover a:hover {
     background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -5640,7 +5640,7 @@ a:hover {
     border-top: 3px solid #b446ff;
 }
 .blue_main_menu .parent a:hover, .active_class2:before, .blue_sub_menu .jen_tabs_conent_list li a:hover, .jb_3_profile_box .list li a:hover{
-    background:  background: rgb(180, 70, 255);
+    background: rgb(180, 70, 255);
     background: -moz-linear-gradient(90deg, rgb(180, 70, 255) 25%, rgb(109, 104, 254) 100%);
     background: -webkit-linear-gradient(90deg, rgb(180, 70, 255) 25%, rgb(109, 104, 254) 100%);
     background: linear-gradient(90deg, rgb(180, 70, 255) 25%, rgb(109, 104, 254) 100%);;

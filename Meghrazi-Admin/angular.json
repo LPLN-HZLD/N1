@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Meghrazi-App": {
+    "Meghrazi-Admin": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Meghrazi-App",
+            "outputPath": "dist/Meghrazi-Admin",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -35,10 +35,10 @@
               "src/assets/css/font-awesome.css",
               "src/assets/css/owl.carousel.css",
               "src/assets/css/owl.theme.default.css",
-              "src/assets/css/dropify.min.css",
-              "src/assets/css/jquery-ui.min.css",
               "src/assets/css/magnific-popup.css",
+              "src/assets/css/dropify.min.css",
               "src/assets/css/nice-select.css",
+              "src/assets/css/jquery-ui.min.css",
               "src/assets/css/reset.css",
               "src/assets/css/style.css",
               "src/assets/css/responsive.css"
@@ -50,15 +50,17 @@
               "src/assets/js/jquery.menu-aim.js",
               "src/assets/js/plugin.js",
               "src/assets/js/owl.carousel.js",
-              "src/assets/js/jquery-ui.js",
               "src/assets/js/jquery.countTo.js",
-              "src/assets/js/jquery.magnific-popup.js",
               "src/assets/js/dropify.min.js",
+              "src/assets/js/jquery-ui.js",
+              "src/assets/js/Chart.bundle.js",
               "src/assets/js/jquery.inview.min.js",
+              "src/assets/js/jquery.magnific-popup.js",
               "src/assets/js/jquery.nice-select.min.js",
               "src/assets/js/imagesloaded.pkgd.min.js",
               "src/assets/js/isotope.pkgd.min.js",
-              "src/assets/js/custom.js"]
+              "src/assets/js/custom.js",
+              "src/assets/js/ChartJS.js"]
           },
           "configurations": {
             "production": {
@@ -93,18 +95,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Meghrazi-App:build"
+            "browserTarget": "Meghrazi-Admin:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Meghrazi-App:build:production"
+              "browserTarget": "Meghrazi-Admin:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Meghrazi-App:build"
+            "browserTarget": "Meghrazi-Admin:build"
           }
         },
         "test": {
@@ -141,16 +143,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Meghrazi-App:serve"
+            "devServerTarget": "Meghrazi-Admin:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Meghrazi-App:serve:production"
+              "devServerTarget": "Meghrazi-Admin:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Meghrazi-App"
+  "defaultProject": "Meghrazi-Admin"
 }
