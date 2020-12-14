@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginModule } from './Login/Login.module';
 import { PanelModule } from './Panel/Panel.module';
+import { AuthModule } from './Auth/Auth.module';
 import { RouterModule } from '@angular/router';
 import { adminRoutes } from './rotes.routing';
 
@@ -15,7 +15,7 @@ import { adminRoutes } from './rotes.routing';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginModule,
+    AuthModule,
     PanelModule,
     RouterModule.forRoot(adminRoutes)
   ],
